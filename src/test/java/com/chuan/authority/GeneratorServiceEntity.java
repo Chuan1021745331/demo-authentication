@@ -40,7 +40,7 @@ public class GeneratorServiceEntity {
         strategyConfig
                 .setCapitalMode(true)
                 .setEntityLombokModel(false)
-                .setDbColumnUnderline(true)
+                //.setDbColumnUnderline(true)
                 .setNaming(NamingStrategy.underline_to_camel)
                 .setInclude(tableNames);//修改替换成你需要的表名，多个表名传数组
         config.setActiveRecord(false)

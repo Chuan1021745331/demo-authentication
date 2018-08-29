@@ -11,7 +11,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author JingChuan
- * @since 2018-08-27
+ * @since 2018-08-29
  */
 public class SysAcim implements Serializable {
 
@@ -128,7 +128,7 @@ public class SysAcim implements Serializable {
     @Override
     public String toString() {
         return "SysAcim{" +
-        ", id=" + id +
+        "id=" + id +
         ", name=" + name +
         ", parentId=" + parentId +
         ", level=" + level +

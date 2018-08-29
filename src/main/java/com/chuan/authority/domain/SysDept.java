@@ -11,7 +11,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author JingChuan
- * @since 2018-08-27
+ * @since 2018-08-29
  */
 public class SysDept implements Serializable {
 
@@ -124,7 +124,7 @@ public class SysDept implements Serializable {
     @Override
     public String toString() {
         return "SysDept{" +
-        ", id=" + id +
+        "id=" + id +
         ", name=" + name +
         ", parentId=" + parentId +
         ", seq=" + seq +

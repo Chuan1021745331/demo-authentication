@@ -11,7 +11,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author JingChuan
- * @since 2018-08-27
+ * @since 2018-08-29
  */
 public class SysRole implements Serializable {
 
@@ -117,7 +117,7 @@ public class SysRole implements Serializable {
     @Override
     public String toString() {
         return "SysRole{" +
-        ", id=" + id +
+        "id=" + id +
         ", name=" + name +
         ", type=" + type +
         ", status=" + status +
