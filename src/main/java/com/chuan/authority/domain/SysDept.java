@@ -32,7 +32,7 @@ public class SysDept implements Serializable {
      */
     private Integer seq;
 
-    private Integer level;
+    private String level;
 
     /**
      * 备注
@@ -81,11 +81,11 @@ public class SysDept implements Serializable {
         this.seq = seq;
     }
 
-    public Integer getLevel() {
+    public String getLevel() {
         return level;
     }
 
-    public void setLevel(Integer level) {
+    public void setLevel(String level) {
         this.level = level;
     }
 

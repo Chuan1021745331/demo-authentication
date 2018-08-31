@@ -1,0 +1,1077 @@
+var failedCode={
+AP0001:{
+    info:"service参数不正确",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0002:{
+    info:"没有访问权限",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0003:{
+    info:"签名不正确",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0004:{
+    info:"文件摘要不正确",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0005:{
+    info:"商户ID不正确",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0006:{
+    info:"提交失败：指令超时或无前置机信息",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0007:{
+    info:"上传失败：重复上传相同的文件",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0008:{
+    info:"上传失败：超过当天上传次数",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0009:{
+    info:"文件上传失败",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0010:{
+    info:"提交失败",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0011:{
+    info:"该批次不存在",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0012:{
+    info:"该批次已废除",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0013:{
+    info:"该批次待复核",
+    typeName:"ss系统错误",
+    type:1
+},
+AP0014:{
+    info:"该批次处理中",
+    typeName:"ss系统错误",
+    type:1
+},
+B0116:{
+    info:"记录不存在，可能是服务器瞬断导致",
+    typeName:"ss系统错误",
+    type:1
+},
+E1001:{
+    info:"账户不存在",
+typeName:"银行信息：账户不存在",
+    type:2
+},
+E1002:{
+    info:"账户关闭",
+    typeName:"银行信息：账户关闭",
+    type:2
+},
+E1003:{
+    info:"账户冻结",
+    typeName:"银行信息：账户冻结",
+    type:2
+},
+E1004:{
+    info:"账户余额不足",
+    typeName:"ss系统错误",
+    type:1
+},
+E1005:{
+    info:"账户已销户",
+    typeName:"银行信息：账户销户",
+    type:2
+},
+E1006:{
+    info:"账户已挂失",
+    typeName:"银行信息：账户挂失",
+    type:2
+},
+E1007:{
+    info:"账户状态异常",
+    typeName:"银行信息：账户异常",
+    type:2
+},
+E1008:{
+    info:"账户类型有误",
+    typeName:"银行信息：账户类型有误",
+    type:2
+},
+E1009:{
+    info:"账户不存在或状态异常",
+    typeName:"银行信息：账户不存在或状态异常",
+    type:2
+},
+E1010:{
+    info:"账号有误",
+    typeName:"银行信息：账号不正确",
+    type:2
+},
+E1011:{
+    info:"户名有误",
+    typeName:"银行信息：户名不正确",
+    type:2
+},
+E1012:{
+    info:"账户非法",
+    typeName:"银行信息：账户疑问",
+    type:2
+},
+E1013:{
+    info:"账号或户名有误",
+    typeName:"银行信息：账号或户名有误",
+    type:2
+},
+E1014:{
+    info:"银行信息有误",
+    typeName:"银行信息：银行信息有误",
+    type:2
+},
+E1015:{
+    info:"开户行信息有误",
+    typeName:"银行信息：开户行信息有误",
+    type:2
+},
+E1016:{
+    info:"过期卡",
+    typeName:"银行信息：过期卡",
+    type:2
+},
+E1017:{
+    info:"不支持旧账号",
+    typeName:"银行信息：不支持旧账号",
+    type:2
+},
+E1018:{
+    info:"不支持存折账号",
+    typeName:"银行信息：不支持存折账号",
+    type:2
+},
+E1019:{
+    info:"证件号码或姓名与账户不符",
+    typeName:"银行信息：证件号码或姓名与账户不符",
+    type:2
+},
+E1020:{
+    info:"不能对此类账户做此类交易",
+    typeName:"银行信息：不支持的交易",
+    type:2
+},
+E1021:{
+    info:"卡号不合法或不存在",
+    typeName:"银行信息：卡号疑问",
+    type:2
+},
+E1022:{
+    info:"不允许跨省市交易或不支持存折",
+    typeName:"银行信息：不允许跨省市交易或不支持存折",
+    type:2
+},
+E1023:{
+    info:"客户姓名不符",
+    typeName:"银行信息：客户姓名不符",
+    type:2
+},
+E1024:{
+    info:"因帐户长期不动帐，请到柜台办理业务",
+    typeName:"银行信息：久悬未取",
+    type:2
+},
+E1025:{
+    info:"输入帐号卡号错",
+    typeName:"银行信息：输入帐号卡号不正确",
+    type:2
+},
+E1026:{
+    info:"非结算账户无法入账",
+    typeName:"银行信息：非结算账户无法入账",
+    type:2
+},
+E1027:{
+    info:"系统开户行信息不正确",
+    typeName:"银行信息：系统开户行信息不正确",
+    type:2
+},
+E1028:{
+    info:"授权协议没有找到",
+    typeName:"ss系统错误",
+    type:1
+},
+E1029:{
+    info:"淘宝退保-划拨回调失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E1030:{
+    info:"淘宝退保-划拨失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E1041:{
+    info:"银行卡省份不符合要求",
+    typeName:"ss系统错误",
+    type:1
+},
+E1042:{
+    info:"文件中记录条数超过限制",
+    typeName:"ss系统错误",
+    type:1
+},
+E1043:{
+    info:"总笔数非法",
+    typeName:"ss系统错误",
+    type:1
+},
+E1044:{
+    info:"已超过此交易当天允许执行最大次数",
+    typeName:"ss系统错误",
+    type:1
+},
+E1045:{
+    info:"用途信息不符合企业财务室要求",
+    typeName:"ss系统错误",
+    type:1
+},
+E1046:{
+    info:"收费金额超过单笔最大金额",
+    typeName:"ss系统错误",
+    type:1
+},
+E1047:{
+    info:"未注册企业财务室",
+    typeName:"ss系统错误",
+    type:1
+},
+E1048:{
+    info:"指令处理失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E1049:{
+    info:"错误代码获取有误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1051:{
+    info:"发起方账户未签约",
+    typeName:"ss系统错误",
+    type:1
+},
+E1052:{
+    info:"发起方账户未激活",
+    typeName:"ss系统错误",
+    type:1
+},
+E1053:{
+    info:"发起方账户无权限",
+    typeName:"ss系统错误",
+    type:1
+},
+E1054:{
+    info:"发起方账户不存在或状态异常",
+    typeName:"ss系统错误",
+    type:1
+},
+E1055:{
+    info:"未设置清算户",
+    typeName:"ss系统错误",
+    type:1
+},
+E1056:{
+    info:"未设置业务额度",
+    typeName:"ss系统错误",
+    type:1
+},
+E1057:{
+    info:"同批次中不能有相同卡折号的记录存在",
+    typeName:"ss系统错误",
+    type:1
+},
+E1059:{
+    info:"收款方没有通过实名认证",
+    typeName:"银行信息：收款方没有通过实名认证",
+    type:2
+},
+E1061:{
+    info:"不允许退款",
+    typeName:"ss系统错误",
+    type:1
+},
+E1073:{
+    info:"请求参数与订单信息不一致",
+    typeName:"银行信息：请求参数与订单信息不一致",
+    type:2
+},
+E1085:{
+    info:"帐户不正常",
+    typeName:"银行信息：帐户异常",
+    type:2
+},
+E1091:{
+    info:"客户余额不足",
+    typeName:"银行信息：余额不足",
+    type:2
+},
+E1101:{
+    info:"交易失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E1119:{
+    info:"柜员无此类凭证",
+    typeName:"银行信息：无此类凭证",
+    type:2
+},
+E120:{
+    info:"},",
+},
+E1202:{
+    info:"金额有误ss",
+},
+E1203:{
+    info:"币种有误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1204:{
+    info:"无效业务",
+    typeName:"ss系统错误",
+    type:1
+},
+E1205:{
+    info:"超过额度限制",
+    typeName:"ss系统错误",
+    type:1
+},
+E1206:{
+    info:"银行区域有误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1207:{
+    info:"处理活期产品主档错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1208:{
+    info:"无一笔入帐成功",
+    typeName:"ss系统错误",
+    type:1
+},
+E1209:{
+    info:"不在银行系统服务时间区间内",
+    typeName:"ss系统错误",
+    type:1
+},
+E1301:{
+    info:"提交失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E1302:{
+    info:"记录不存在",
+    typeName:"ss系统错误",
+    type:1
+},
+E1303:{
+    info:"企业网银帐号不存在",
+    typeName:"ss系统错误",
+    type:1
+},
+E1304:{
+    info:"操作员错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1305:{
+    info:"操作员类型错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1306:{
+    info:"操作员密码错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1307:{
+    info:"操作员类型错误，不能转帐",
+    typeName:"ss系统错误",
+    type:1
+},
+E1308:{
+    info:"操作员没有此帐号帐号权限",
+    typeName:"ss系统错误",
+    type:1
+},
+E1309:{
+    info:"转帐类型错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1310:{
+    info:"主机返回空数据",
+    typeName:"ss系统错误",
+    type:1
+},
+E1311:{
+    info:"网银其它错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1312:{
+    info:"交易成功",
+    typeName:"ss系统错误",
+    type:1
+},
+E1313:{
+    info:"无此帐号或存折",
+    typeName:"ss系统错误",
+    type:1
+},
+E1314:{
+    info:"户况不正常或已结清",
+    typeName:"银行信息：无此帐号或存折",
+    type:2
+},
+E1315:{
+    info:"该帐户有事故或质权设定，不得存入/支取/结清",
+    typeName:"银行信息：户况不正常或已结清",
+    type:2
+},
+E1316:{
+    info:"帐户密码错误",
+    typeName:"银行信息：户况设定疑问",
+    type:2
+},
+E1317:{
+    info:"交易金额应大于零",
+    typeName:"ss系统错误",
+    type:1
+},
+E1318:{
+    info:"原交易已充正",
+    typeName:"ss系统错误",
+    type:1
+},
+E1319:{
+    info:"无此交易",
+    typeName:"ss系统错误",
+    type:1
+},
+E1320:{
+    info:"外汇会计只做本所转帐",
+    typeName:"ss系统错误",
+    type:1
+},
+E1321:{
+    info:"帐号正在使用",
+    typeName:"ss系统错误",
+    type:1
+},
+E1322:{
+    info:"金额被冻结",
+    typeName:"ss系统错误",
+    type:1
+},
+E1323:{
+    info:"有效金额不足",
+    typeName:"ss系统错误",
+    type:1
+},
+E1324:{
+    info:"此帐号不是密码提款，不能转出",
+    typeName:"ss系统错误",
+    type:1
+},
+E1325:{
+    info:"转入转出标志不正确",
+    typeName:"ss系统错误",
+    type:1
+},
+E1326:{
+    info:"转入转出帐号的业务品种不能互转",
+    typeName:"ss系统错误",
+    type:1
+},
+E1327:{
+    info:"转出帐号的币别与转入帐号的币别不相同",
+    typeName:"ss系统错误",
+    type:1
+},
+E1328:{
+    info:"非实名制帐户，不得存入",
+    typeName:"ss系统错误",
+    type:1
+},
+E1329:{
+    info:"信用卡转帐币别定义不正确",
+    typeName:"银行信息：非实名制帐户",
+    type:2
+},
+E1330:{
+    info:"重复的流水号",
+    typeName:"ss系统错误",
+    type:1
+},
+E1331:{
+    info:"外汇会计，附加档中找不到此帐号",
+    typeName:"ss系统错误",
+    type:1
+},
+E1332:{
+    info:"外汇会计，余额档中无此帐号",
+    typeName:"ss系统错误",
+    type:1
+},
+E1333:{
+    info:"无此客户资料",
+    typeName:"ss系统错误",
+    type:1
+},
+E1334:{
+    info:"转帐不成功",
+    typeName:"ss系统错误",
+    type:1
+},
+E1335:{
+    info:"此交易不成功，无需冲数",
+    typeName:"ss系统错误",
+    type:1
+},
+E1336:{
+    info:"无此报文类型",
+    typeName:"ss系统错误",
+    type:1
+},
+E1337:{
+    info:"不是一本通存折",
+    typeName:"ss系统错误",
+    type:1
+},
+E1338:{
+    info:"无转出行所",
+    typeName:"ss系统错误",
+    type:1
+},
+E1339:{
+    info:"无转入行所",
+    typeName:"ss系统错误",
+    type:1
+},
+E1340:{
+    info:"该笔定期不得进行通存通兑",
+    typeName:"ss系统错误",
+    type:1
+},
+E1341:{
+    info:"帐号与存折号不符",
+    typeName:"ss系统错误",
+    type:1
+},
+E1342:{
+    info:"该笔定期的资料不存在",
+    typeName:"银行信息：帐号与存折号不符",
+    type:2
+},
+E1343:{
+    info:"处理码与转帐帐号不对应",
+    typeName:"ss系统错误",
+    type:1
+},
+E1344:{
+    info:"一本通不接受此业务品种",
+    typeName:"ss系统错误",
+    type:1
+},
+E1345:{
+    info:"禁制户或死亡户不得做此交易",
+    typeName:"ss系统错误",
+    type:1
+},
+E1346:{
+    info:"此业务品种不得约定存期",
+    typeName:"ss系统错误",
+    type:1
+},
+E1347:{
+    info:"此业务品种、币别下无此存期档次",
+    typeName:"ss系统错误",
+    type:1
+},
+E1348:{
+    info:"该存期档次尚未开放",
+    typeName:"ss系统错误",
+    type:1
+},
+E1349:{
+    info:"开户金额低于最低开户金额",
+    typeName:"ss系统错误",
+    type:1
+},
+E1350:{
+    info:"取不到该笔定期的利率",
+    typeName:"ss系统错误",
+    type:1
+},
+E1351:{
+    info:"此交易记录所对应的存折已不存在",
+    typeName:"ss系统错误",
+    type:1
+},
+E1352:{
+    info:"此笔定期无历史资料，不得做冲数",
+    typeName:"ss系统错误",
+    type:1
+},
+E1353:{
+    info:"存折号码为零",
+    typeName:"ss系统错误",
+    type:1
+},
+E1354:{
+    info:"无符合条件的交易记录",
+    typeName:"ss系统错误",
+    type:1
+},
+E1355:{
+    info:"此交易不允许冲数",
+    typeName:"ss系统错误",
+    type:1
+},
+E1356:{
+    info:"查询流水不存在1",
+    typeName:"ss系统错误",
+    type:1
+},
+E1357:{
+    info:"此业务尚未开放",
+    typeName:"ss系统错误",
+    type:1
+},
+E1358:{
+    info:"对公交易，不可为非营业日",
+    typeName:"ss系统错误",
+    type:1
+},
+E1359:{
+    info:"网上缴费只可作人民币交易",
+    typeName:"ss系统错误",
+    type:1
+},
+E1360:{
+    info:"数据错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1361:{
+    info:"身份证与账号不符",
+    typeName:"ss系统错误",
+    type:1
+},
+E1362:{
+    info:"此客户下无账号",
+    typeName:"银行信息：身份证与账号不符",
+    type:2
+},
+E1363:{
+    info:"此段时间内无交易",
+    typeName:"银行信息：无此账号",
+    type:2
+},
+E1364:{
+    info:"起息日不得小于开户日",
+    typeName:"ss系统错误",
+    type:1
+},
+E1365:{
+    info:"存折、存单号码错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1366:{
+    info:"金融卡不可用",
+    typeName:"银行信息：号码错误",
+    type:2
+},
+E1367:{
+    info:"已经存在事故",
+    typeName:"银行信息：金融卡不可用",
+    type:2
+},
+E1368:{
+    info:"不存在此事故",
+    typeName:"ss系统错误",
+    type:1
+},
+E1369:{
+    info:"此账号不能做本交易",
+    typeName:"ss系统错误",
+    type:1
+},
+E1370:{
+    info:"已到第一条纪录，不能向上翻页",
+    typeName:"银行信息：此账号交易疑问",
+    type:2
+},
+E1371:{
+    info:"第一次查询不能向上翻页",
+    typeName:"ss系统错误",
+    type:1
+},
+E1372:{
+    info:"金融卡有其他事故",
+    typeName:"ss系统错误",
+    type:1
+},
+E1373:{
+    info:"主机系统忙，请稍候再试",
+    typeName:"银行信息：其他事故",
+    type:2
+},
+E1374:{
+    info:"储蓄账号不能做转账交易",
+    typeName:"ss系统错误",
+    type:1
+},
+E1375:{
+    info:"主机返回其他错误",
+    typeName:"银行信息：储蓄账号",
+    type:2
+},
+E1376:{
+    info:"系统故障",
+    typeName:"ss系统错误",
+    type:1
+},
+E1377:{
+    info:"系统配置错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1378:{
+    info:"前置机IP地址错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1379:{
+    info:"前置机通讯配置错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1380:{
+    info:"通讯故障",
+    typeName:"ss系统错误",
+    type:1
+},
+E1381:{
+    info:"通讯故障",
+    typeName:"ss系统错误",
+    type:1
+},
+E1382:{
+    info:"系统故障",
+    typeName:"ss系统错误",
+    type:1
+},
+E1383:{
+    info:"取证书故障",
+    typeName:"ss系统错误",
+    type:1
+},
+E1384:{
+    info:"IP地址不符（后台）",
+    typeName:"ss系统错误",
+    type:1
+},
+E1385:{
+    info:"客户端读错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1386:{
+    info:"证书验证错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1387:{
+    info:"超过最多发包数",
+    typeName:"ss系统错误",
+    type:1
+},
+E1388:{
+    info:"接收超时",
+    typeName:"ss系统错误",
+    type:1
+},
+E1389:{
+    info:"IC卡设备出错",
+    typeName:"ss系统错误",
+    type:1
+},
+E1390:{
+    info:"签名数据出错",
+    typeName:"ss系统错误",
+    type:1
+},
+E1391:{
+    info:"发送报文有误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1392:{
+    info:"企业财务系统IP地址错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E1393:{
+    info:"没有收到交易请求",
+    typeName:"ss系统错误",
+    type:1
+},
+E1394:{
+    info:"没有收到主机返回数据",
+    typeName:"ss系统错误",
+    type:1
+},
+E1395:{
+    info:"交易失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E1396:{
+    info:"转帐不成功",
+    typeName:"ss系统错误",
+    type:1
+},
+E1397:{
+    info:"无符合条件的交易记录",
+    typeName:"ss系统错误",
+    type:1
+},
+E1398:{
+    info:"查询流水不存在",
+    typeName:"ss系统错误",
+    type:1
+},
+E1399:{
+    info:"交易失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E1401:{
+    info:"此账户未缴纳小额账户管理费",
+    typeName:"ss系统错误",
+    type:1
+},
+E1408:{
+    info:"帐号类型不符",
+    typeName:"ss系统错误",
+    type:1
+},
+E2126:{
+    info:"接口代码不能为空",
+    typeName:"银行信息：账号类型不符",
+    type:2
+},
+E2127:{
+    info:"不允许在本机处理",
+    typeName:"ss系统错误",
+    type:1
+},
+E2128:{
+    info:"超出有效期",
+    typeName:"ss系统错误",
+    type:1
+},
+E2129:{
+    info:"信用卡收单返回错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E2130:{
+    info:"受限制的卡",
+    typeName:"银行信息：信用卡返回错误",
+    type:2
+},
+E2131:{
+    info:"不允许做代扣",
+    typeName:"银行信息：受限",
+    type:2
+},
+E2132:{
+    info:"无效户口代码",
+    typeName:"银行信息：不允许代扣",
+    type:2
+},
+E3001:{
+    info:"支付包错误",
+    typeName:"银行信息：无效代码",
+    type:2
+},
+E3150:{
+    info:"帐户不正常",
+    typeName:"ss系统错误",
+    type:1
+},
+E3266:{
+    info:"客户名称与帐号不符",
+    typeName:"银行信息：帐户不正常",
+    type:2
+},
+E3540:{
+    info:"帐户不正常",
+    typeName:"银行信息：客户名称与帐号不符",
+    type:2
+},
+E3551:{
+    info:"帐户已冻结",
+    typeName:"银行信息：帐户不正常",
+    type:2
+},
+E3556:{
+    info:"卡状态不正常",
+    typeName:"银行信息：帐户已冻结",
+    type:2
+},
+E4001:{
+    info:"外部系统错误",
+    typeName:"银行信息：卡状态不正常",
+    type:2
+},
+E4002:{
+    info:"外部系统通讯失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E4003:{
+    info:"交易失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E4500:{
+    info:"帐户不正常或冻结",
+    typeName:"ss系统错误",
+    type:1
+},
+E4501:{
+    info:"帐户不正常",
+    typeName:"银行信息：帐户不正常或冻结",
+    type:2
+},
+E5000:{
+    info:"账户已挂失",
+    typeName:"银行信息：帐户不正常",
+    type:2
+},
+E5002:{
+    info:"卡已挂失",
+    typeName:"银行信息：账户已挂失",
+    type:2
+},
+E5008:{
+    info:"收款结算账户错误",
+    typeName:"银行信息：卡已挂失",
+    type:2
+},
+E5502:{
+    info:"密码已挂失",
+    typeName:"ss系统错误",
+    type:1
+},
+E7102:{
+    info:"余额不足",
+    typeName:"ss系统错误",
+    type:1
+},
+E8001:{
+    info:"其它错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E8002:{
+    info:"功能选项输入错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E8003:{
+    info:"原起息日或种类选项输入错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E8004:{
+    info:"截止日错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E8005:{
+    info:"交易失败",
+    typeName:"ss系统错误",
+    type:1
+},
+E8201:{
+    info:"帐户不正常",
+    typeName:"ss系统错误",
+    type:1
+},
+E8208:{
+    info:"一本通中该币别/钞汇已结清",
+    typeName:"银行信息：帐户不正常",
+    type:2
+},
+E8301:{
+    info:"专项账户存入摘要代码错误或该卡已销户",
+    typeName:"银行信息：帐户结清疑问",
+    type:2
+},
+E9111:{
+    info:"提取数据异常",
+    typeName:"银行信息：专项账户存入错误或该卡已销户",
+    type:2
+},
+E9777:{
+    info:"报文异常",
+    typeName:"ss系统错误",
+    type:1
+},
+E9981:{
+    info:"通讯参数配置错误",
+    typeName:"ss系统错误",
+    type:1
+},
+E9999:{
+    info:"通讯失败",
+    typeName:"ss系统错误",
+    type:1
+},
+S0000:{
+    info:"支付成功",
+    typeName:"ss系统错误",
+    type:1
+},
+SDB01:{
+    info:"非法账号ss",
+},
+SHK02:{
+    info:"非法账号",
+    typeName:"银行信息：账号问题",
+    type:2
+}
+}
+console.log((typeof failedCode['E1001'])=='undefined')

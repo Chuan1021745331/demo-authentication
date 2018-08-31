@@ -1,5 +1,6 @@
 package com.chuan.authority.utile;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -17,4 +18,6 @@ public class HttpContextUtils {
 	public static HttpServletResponse getHttpServletResponse(){
 		return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getResponse();
 	}
+
+
 }

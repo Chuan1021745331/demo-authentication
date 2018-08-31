@@ -2,6 +2,9 @@ package com.chuan.authority.config;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+import com.google.common.base.Preconditions;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -9,8 +12,11 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.util.LinkedMultiValueMap;
 
 import javax.sql.DataSource;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 
 /**
  * @类名:

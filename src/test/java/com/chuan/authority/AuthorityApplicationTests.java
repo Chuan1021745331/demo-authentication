@@ -11,6 +11,8 @@ public class AuthorityApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
+
 	}
 
 }

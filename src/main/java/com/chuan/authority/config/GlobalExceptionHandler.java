@@ -1,15 +1,17 @@
 package com.chuan.authority.config;
 
+import com.chuan.authority.exception.DBException;
+import com.chuan.authority.exception.ParamException;
 import com.chuan.authority.utile.HttpServletUtils;
 import com.chuan.authority.utile.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -21,6 +23,28 @@ import javax.servlet.http.HttpServletRequest;
 @RestControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
+
+    @ExceptionHandler({ParamException.class})
+    public Object handleParamException(ParamException e, HttpServletRequest request, Model model){
+        log.error(e.getMessage(), e);
+        //判断request是否是ajax请求
+        if(HttpServletUtils.isAjax(request)){
+            return R.failed(e.getCode(),e.getMessage());
+        }
+        model.addAttribute("errorMessage",e.getMessage());
+        return new ModelAndView("error/500");
+    }
+
+    @ExceptionHandler({DBException.class})
+    public Object handleDBException(DBException e, HttpServletRequest request, Model model){
+        log.error(e.getMessage(), e);
+        //判断request是否是ajax请求
+        if(HttpServletUtils.isAjax(request)){
+            return R.failed(e.getCode(),e.getMessage());
+        }
+        model.addAttribute("errorMessage",e.getMessage());
+        return new ModelAndView("error/500");
+    }
 
     @ExceptionHandler(Exception.class)
     public Object exception(Exception e, HttpServletRequest request){
