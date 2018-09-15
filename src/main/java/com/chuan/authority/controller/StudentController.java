@@ -21,6 +21,7 @@ public class StudentController {
     @RequestMapping("/test")
     public String study(Model model){
 
+        //todo sss
         model.addAttribute("home",new Date());
         return "study";
     }
