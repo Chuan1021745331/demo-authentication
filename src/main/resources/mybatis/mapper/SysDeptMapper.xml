@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.chuan.authority.mapper.SysDeptMapper">
+<mapper namespace="com.chuan.authority.sys.mapper.SysDeptMapper">
     <select id="selectEquativeCount" resultType="java.lang.Integer">
         select count(*) from sys_dept
         <where>
@@ -8,5 +8,10 @@
             <if test="name !=null">and name = #{name} </if>
             <if test="deptId !=null">and != #{deptId} </if>
         </where>
+    </select>
+
+    <select id="selectByLevel" resultType="com.chuan.authority.sys.domain.SysDept">
+        select * from sys_dept d
+        where d.level like #{level} || '.%'
     </select>
 </mapper>
